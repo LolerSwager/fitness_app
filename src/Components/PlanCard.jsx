@@ -19,14 +19,14 @@ const PlanCard = ({ data }) => {
             <StyledContent>
                 <span>
                     <label>
-                        Gentagelser
+                        <b> Gentagelser</b>
                         <FontAwesomeIcon icon={faRepeat} />
                     </label>
                     <p>{data.repetitions}</p>
                 </span>
                 <span>
                     <label>
-                        Vægt
+                        <b> Vægt</b>
                         <FontAwesomeIcon icon={faDumbbell} />
                     </label>
                     {data && data.weight ? <p>{data.weight} Kg.</p> : <p>ingen</p>}
@@ -35,7 +35,7 @@ const PlanCard = ({ data }) => {
             {data && data.remarks ? (
                 <span>
                     <h3>Bemærkninger</h3>
-                    <p>{data.remarks}</p>
+                    <>{data.remarks}</>
                 </span>
             ) : (
                 <></>
