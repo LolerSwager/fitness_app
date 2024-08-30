@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Home from "./Pages"
+import DemoData from "./Json/Jannick_plan.json"
+import { useState } from "react"
+import styled from "styled-components"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // Initialize state with data from localStorage
+    const [plan, setPlan] = useState(JSON.parse(localStorage.getItem("PlanData")))
+
+    const loadDemoData = () => {
+        // Store the demo data in localStorage
+        localStorage.setItem("PlanData", JSON.stringify(DemoData))
+
+        // Update the plan state with the new demo data
+        setPlan(DemoData)
+    }
+
+    return (
+        <StyledMain>
+            <Home plan={plan} />
+            <button onClick={loadDemoData}>Load Demo Data</button>
+        </StyledMain>
+    )
 }
 
-export default App;
+const StyledMain = styled.main`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #2d2d2d;
+`
+
+export default App
