@@ -29,7 +29,8 @@ const StyledMain = styled.main`
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-    background-color: #2d2d2d;
+    background: linear-gradient(45deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
+    //background-color: #2d2d2d;
 `
 
 export default App

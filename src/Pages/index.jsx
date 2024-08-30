@@ -1,45 +1,13 @@
 import styled from "styled-components"
+import PlanCard from "../Components/PlanCard"
 
 const Home = ({ plan }) => {
     return (
         <StyledHome>
             {plan && plan.length > 0 ? (
-                plan.map((item) => (
-                    <StyledCard key={item.id}>
-                        {item && item.machineNr ? (
-                            <StyledListHeader>
-                                <p>{item.machineNr}</p>
-                                <p>{item.exerciseName}</p>
-                            </StyledListHeader>
-                        ) : (
-                            <StyledListHeader>
-                                <p>Fri</p>
-                                <p>{item.exerciseName}</p>
-                            </StyledListHeader>
-                        )}
-
-                        <StyledContent>
-                            <span>
-                                <label>Gentagelser</label>
-                                <p>{item.repetitions}</p>
-                            </span>
-                            <span>
-                                <label>Vægt</label>
-                                {item && item.weight ? <p>{item.weight}</p> : <p>ingen</p>}
-                            </span>
-                        </StyledContent>
-                        {item && item.remarks ? (
-                            <span>
-                                <label>Bemærkninger</label>
-                                <p>{item.remarks}</p>
-                            </span>
-                        ) : (
-                            <></>
-                        )}
-                    </StyledCard>
-                ))
+                plan.map((item) => <PlanCard data={item} key={item.id} />)
             ) : (
-                <StyledCard>der er ikke nogle trænings plan</StyledCard>
+                <p>der er ikke nogle trænings plan</p>
             )}
         </StyledHome>
     )
@@ -57,23 +25,6 @@ const StyledHome = styled.div`
     ul {
         list-style: none;
     }
-`
-
-const StyledCard = styled.div`
-    background-color: #3b3b3b;
-    padding: 1rem;
-`
-
-const StyledListHeader = styled.div`
-    display: flex;
-    gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-`
-
-const StyledContent = styled.div`
-    display: flex;
-    justify-content: space-between;
 `
 
 export default Home
