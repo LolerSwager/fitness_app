@@ -7,10 +7,10 @@ const PlanCard = ({ data }) => {
         <StyledCard>
             {data && data.machineNr ? (
                 <h3>
-                    {data.machineNr} {data.exerciseName}
+                    {data.machineNr} - {data.exerciseName}
                 </h3>
             ) : (
-                <h3>Fri {data.exerciseName}</h3>
+                <h3>Fri - {data.exerciseName}</h3>
             )}
             <StyledContent>
                 <span>
@@ -60,6 +60,18 @@ const StyledCard = styled.div`
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
     border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    h3 {
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 100%;
+            right: 0px;
+        }
+    }
     label {
         display: flex;
         align-items: center;
@@ -70,7 +82,6 @@ const StyledCard = styled.div`
 const StyledContent = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
 `
 
 export default PlanCard

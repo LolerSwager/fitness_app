@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "machineNr": null,
+        "exerciseName": "Hoftebøjere",
+        "repetitions": "10 x hvert ben",
+        "weight": null,
+        "remarks": "Sid på numsen, hænder i gulv bag kroppen, fødderne placeret i gulv foran, træk skiftevis knæ mod gulv (ind mod det andet ben) uden at flytte fod"
+    },
+    {
+        "id": 2,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "10",
+        "weight": null,
+        "remarks": "sid på alle fire skiftevis krum og svej i ryg"
+    },
+    {
+        "id": 3,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "10",
+        "weight": null,
+        "remarks": "sid på alle fire og kør rundt i skulder"
+    },
+    {
+        "id": 4,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "5",
+        "weight": null,
+        "remarks": "nums til hæl, hænder strækt frem træk dig krummede fremad og end liggende med svej i rykken og strakte arme"
+    },
+    {
+        "id": 5,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "3x10",
+        "weight": null,
+        "remarks": "ned og lig på maven op og krum i rykken (husk knæer bliver i gulv)"
+    },
+    {
+        "id": 6,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "10",
+        "weight": null,
+        "remarks": "lig fladt på maven, hænder under panden, løft overkropen"
+    },
+    {
+        "id": 7,
+        "machineNr": null,
+        "exerciseName": null,
+        "repetitions": "3x10",
+        "weight": null,
+        "remarks": "squat med hælen hævet stille og rolligt / squart i trx med elastik om knæ"
+    }
+]

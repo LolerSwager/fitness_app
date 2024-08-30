@@ -2,6 +2,7 @@ import "./App.css"
 import Home from "./Pages"
 import JannickData from "./Json/Jannick_plan.json"
 import AnitaData from "./Json/Anita_plan.json"
+import OpvarmingData from "./Json/Opvarming_plan.json"
 import { useState } from "react"
 import styled from "styled-components"
 
@@ -19,6 +20,11 @@ function App() {
     }
 
     const [plan, setPlan] = useState(initialPlan)
+
+    const LoadOpvarmingData = () => {
+        localStorage.setItem("PlanData", JSON.stringify(OpvarmingData))
+        setPlan(OpvarmingData)
+    }
 
     const LoadJannickData = () => {
         localStorage.setItem("PlanData", JSON.stringify(JannickData))
@@ -39,6 +45,7 @@ function App() {
         <StyledMain>
             <Home plan={plan} />
             <div className="spacer">
+                <button onClick={LoadOpvarmingData}>Load Opvarming</button>
                 <button onClick={LoadJannickData}>Load Jannick</button>
                 <button onClick={LoadAnitaData}>Load Anita</button>
                 <button onClick={CleanData}>Clean Data</button>
