@@ -27,14 +27,20 @@ const PlanCard = ({ data }) => {
                     </label>
                     {data && data.weight ? <p>{data.weight} Kg.</p> : <p>ingen</p>}
                 </span>
-                <span>
-                    <label>
-                        <h4>Bemærkninger</h4>
-                        <FontAwesomeIcon icon={faNoteSticky} />
-                    </label>
-                    <>{data.remarks}</>
-                </span>
             </StyledContent>
+            {data && data.remarks ? (
+                <StyledContent>
+                    <span>
+                        <label>
+                            <h4>Bemærkninger</h4>
+                            <FontAwesomeIcon icon={faNoteSticky} />
+                        </label>
+                        <>{data.remarks}</>
+                    </span>
+                </StyledContent>
+            ) : (
+                <></>
+            )}
         </StyledCard>
     )
 }
@@ -43,7 +49,7 @@ const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 1rem;
     border-radius: 10px;
 
