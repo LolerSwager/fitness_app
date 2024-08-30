@@ -1,59 +1,59 @@
 import styled from "styled-components"
-import { faDumbbell, faRepeat } from "@fortawesome/free-solid-svg-icons"
+import { faDumbbell, faNoteSticky, faRepeat } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const PlanCard = ({ data }) => {
     return (
         <StyledCard>
             {data && data.machineNr ? (
-                <StyledListHeader>
-                    <h2>{data.machineNr}</h2>
-                    <h2>{data.exerciseName}</h2>
-                </StyledListHeader>
+                <h3>
+                    {data.machineNr} {data.exerciseName}
+                </h3>
             ) : (
-                <StyledListHeader>
-                    <p>Fri</p>
-                    <p>{data.exerciseName}</p>
-                </StyledListHeader>
+                <h3>Fri {data.exerciseName}</h3>
             )}
             <StyledContent>
                 <span>
                     <label>
-                        <b> Gentagelser</b>
+                        <h4> Gentagelser</h4>
                         <FontAwesomeIcon icon={faRepeat} />
                     </label>
                     <p>{data.repetitions}</p>
                 </span>
                 <span>
                     <label>
-                        <b> Vægt</b>
+                        <h4> Vægt</h4>
                         <FontAwesomeIcon icon={faDumbbell} />
                     </label>
                     {data && data.weight ? <p>{data.weight} Kg.</p> : <p>ingen</p>}
                 </span>
-            </StyledContent>
-            {data && data.remarks ? (
                 <span>
-                    <h3>Bemærkninger</h3>
+                    <label>
+                        <h4>Bemærkninger</h4>
+                        <FontAwesomeIcon icon={faNoteSticky} />
+                    </label>
                     <>{data.remarks}</>
                 </span>
-            ) : (
-                <></>
-            )}
+            </StyledContent>
         </StyledCard>
     )
 }
 
 const StyledCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+
+    //Glass effect
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
     border: 0.2rem solid rgba(255, 255, 255, 0.3);
-
-    padding: 1rem;
-    border-radius: 10px;
     label {
         display: flex;
         align-items: center;
@@ -61,16 +61,10 @@ const StyledCard = styled.div`
     }
 `
 
-const StyledListHeader = styled.div`
-    display: flex;
-    gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-`
-
 const StyledContent = styled.div`
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
 `
 
 export default PlanCard

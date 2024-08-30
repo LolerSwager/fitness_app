@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "machineNr": 1,
+        "exerciseName": "Seated leg press",
+        "repetitions": "3x12",
+        "weight": 20,
+        "remarks": "Fokus på knæ. Brug evt elastik"
+    },
+    {
+        "id": 2,
+        "machineNr": 3,
+        "exerciseName": "Leg extentions",
+        "repetitions": "3x12",
+        "weight": 5,
+        "remarks": "1 ben ad gangen. ryglæn tilbage så knæhase er ved sædekant"
+    },
+    {
+        "id": 3,
+        "machineNr": 5,
+        "exerciseName": "Abodiminal / back extensions",
+        "repetitions": "3x12",
+        "weight": 30,
+        "remarks": null
+    },
+    {
+        "id": 4,
+        "machineNr": 6,
+        "exerciseName": "Row",
+        "repetitions": "3x12",
+        "weight": 15,
+        "remarks": "husk det er albuer der trækker tilbage. ikke bruge armmuskler."
+    },
+    {
+        "id": 5,
+        "machineNr": 7,
+        "exerciseName": "Chest Press",
+        "repetitions": "3x12",
+        "weight": 10,
+        "remarks": "opmærksom på håndled"
+    },
+    {
+        "id": 6,
+        "machineNr": null,
+        "exerciseName": "Lateral skulder raises",
+        "repetitions": "3x12",
+        "weight": 1,
+        "remarks": null
+    }
+]
