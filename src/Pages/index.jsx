@@ -25,7 +25,7 @@ const StyledHome = styled.div`
     max-width: 600px;
     width: 100%;
     margin: auto;
-    padding: 1rem 0;
+    padding: 1rem;
     gap: 1rem;
     ul {
         list-style: none;
