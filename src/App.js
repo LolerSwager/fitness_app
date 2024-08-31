@@ -42,39 +42,46 @@ function App() {
     }
 
     return (
-        <StyledMain>
-            <Home plan={plan} />
-            <div className="spacer">
-                <button onClick={LoadOpvarmingData}>Load Opvarming</button>
-                <button onClick={LoadJannickData}>Load Jannick</button>
-                <button onClick={LoadAnitaData}>Load Anita</button>
-                <button onClick={CleanData}>Clean Data</button>
-            </div>
-        </StyledMain>
+        <StyledApp>
+            <header></header>
+            <main>
+                <Home plan={plan} />
+                <div className="spacer">
+                    <button onClick={LoadOpvarmingData}>Opvarming</button>
+                    <button onClick={LoadJannickData}>Jannick</button>
+                    <button onClick={LoadAnitaData}>Anita</button>
+                    <button onClick={CleanData}>Clean Data</button>
+                </div>
+            </main>
+            <footer></footer>
+        </StyledApp>
     )
 }
 
-const StyledMain = styled.main`
+const StyledApp = styled.main`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(45deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
-    //background-color: #2d2d2d;
 
-    .spacer {
+    main {
         display: flex;
-        gap: 1rem;
-        padding: 1rem;
-        button {
-            padding: 0.5rem;
-            border: none;
-            border-radius: 5px;
-            background-color: #eee;
-            color: #000;
-            cursor: pointer;
-            &:hover {
-                background-color: #707070;
+        flex-direction: column;
+        .spacer {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            button {
+                padding: 0.5rem 0.7rem;
+                border: none;
+                border-radius: 5px;
+                background-color: #eee;
+                color: #000;
+                cursor: pointer;
+                &:hover {
+                    background-color: #9d9d9d88;
+                }
             }
         }
     }

@@ -1,74 +1,79 @@
 [
     {
-        "id": 1,
-        "machineNr": 15,
-        "exerciseName": "Hacksquat",
-        "repetitions": "3x så mange du kan",
-        "weight": null,
-        "remarks": "7stk"
-    },
-    {
-        "id": 2,
-        "machineNr": 2,
-        "exerciseName": "Seated Leg Curl",
-        "repetitions": "3x12",
-        "weight": "20",
-        "remarks": null
-    },
-    {
-        "id": 3,
-        "machineNr": 7,
-        "exerciseName": "Chest press",
-        "repetitions": "3x12",
-        "weight": "15",
-        "remarks": null
-    },
-    {
-        "id": 4,
-        "machineNr": 5,
-        "exerciseName": "Abdominal / Back extensions",
-        "repetitions": "3x12",
-        "weight": "45",
-        "remarks": null
-    },
-    {
-        "id": 5,
-        "machineNr": 21,
-        "exerciseName": "Low row",
-        "repetitions": "3x12",
-        "weight": "27,5",
-        "remarks": null
-    },
-    {
-        "id": 6,
-        "machineNr": 22,
-        "exerciseName": "Lat pull down",
-        "repetitions": "3x12",
-        "weight": "27,5",
-        "remarks": null
-    },
-    {
-        "id": 7,
-        "machineNr": null,
-        "exerciseName": "Lateral schoulder press",
-        "repetitions": "3x12",
-        "weight": "3",
-        "remarks": null
-    },
-    {
-        "id": 8,
-        "machineNr": null,
-        "exerciseName": "Bicep Curl",
-        "repetitions": "3x12",
-        "weight": "5",
-        "remarks": null
-    },
-    {
-        "id": 9,
-        "machineNr": null,
-        "exerciseName": "Tricep i vabellcross m. reb",
-        "repetitions": "3x12",
-        "weight": "7.5",
-        "remarks": null
+        "Title": "Jannick's trænings skema",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": 15,
+                "exerciseName": "Hacksquat",
+                "repetitions": "3x så mange du kan",
+                "weight": null,
+                "remarks": "7stk"
+            },
+            {
+                "id": 2,
+                "machineNr": 2,
+                "exerciseName": "Seated Leg Curl",
+                "repetitions": "3x12",
+                "weight": "20",
+                "remarks": null
+            },
+            {
+                "id": 3,
+                "machineNr": 7,
+                "exerciseName": "Chest press",
+                "repetitions": "3x12",
+                "weight": "15",
+                "remarks": null
+            },
+            {
+                "id": 4,
+                "machineNr": 5,
+                "exerciseName": "Abdominal / Back extensions",
+                "repetitions": "3x12",
+                "weight": "45",
+                "remarks": null
+            },
+            {
+                "id": 5,
+                "machineNr": 21,
+                "exerciseName": "Low row",
+                "repetitions": "3x12",
+                "weight": "27,5",
+                "remarks": null
+            },
+            {
+                "id": 6,
+                "machineNr": 22,
+                "exerciseName": "Lat pull down",
+                "repetitions": "3x12",
+                "weight": "27,5",
+                "remarks": null
+            },
+            {
+                "id": 7,
+                "machineNr": null,
+                "exerciseName": "Lateral schoulder press",
+                "repetitions": "3x12",
+                "weight": "3",
+                "remarks": null
+            },
+            {
+                "id": 8,
+                "machineNr": null,
+                "exerciseName": "Bicep Curl",
+                "repetitions": "3x12",
+                "weight": "5",
+                "remarks": null
+            },
+            {
+                "id": 9,
+                "machineNr": null,
+                "exerciseName": "Tricep i vabellcross m. reb",
+                "repetitions": "3x12",
+                "weight": "7.5",
+                "remarks": null
+            }
+        ]
     }
 ]

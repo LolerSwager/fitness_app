@@ -4,10 +4,15 @@ import PlanCard from "../Components/PlanCard"
 const Home = ({ plan }) => {
     return (
         <StyledHome>
-            {plan && plan.length > 0 ? (
-                plan.map((item) => <PlanCard data={item} key={item.id} />)
+            {plan && plan.length > 0 && plan[0]?.exercisePlan ? (
+                <>
+                    <h1>{plan[0].Title}</h1>
+                    {plan[0].exercisePlan.map((item) => (
+                        <PlanCard data={item} key={item.id} />
+                    ))}
+                </>
             ) : (
-                <p>der er ikke nogle trænings plan</p>
+                <h1>Der er ikke nogle træningsplan</h1>
             )}
         </StyledHome>
     )
