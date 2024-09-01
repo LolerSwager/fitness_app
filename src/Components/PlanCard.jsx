@@ -48,9 +48,9 @@ const PlanCard = ({ data }) => {
 const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1.3rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 10px;
 
     //Glass effect
@@ -58,7 +58,6 @@ const StyledCard = styled.div`
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.9px);
-    -webkit-backdrop-filter: blur(4.9px);
     border: 0.2rem solid rgba(255, 255, 255, 0.3);
     h3 {
         position: relative;
