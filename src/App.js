@@ -114,6 +114,9 @@ function App() {
 
         setPlanName("")
         setPlanTitle("")
+
+        //close popup after
+        handleClosePopup()
     }
 
     const handleDeletePlan = (planToRemove) => {
