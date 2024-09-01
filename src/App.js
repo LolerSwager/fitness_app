@@ -5,6 +5,7 @@ import AnitaData from "./Json/Anita_plan.json"
 import OpvarmingData from "./Json/Opvarming_plan.json"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
+import Popup from "./Components/Popup"
 
 function App() {
     // demo data
@@ -63,8 +64,25 @@ function App() {
         }
     }
 
+    const [planName, setPlanName] = useState("")
+    const handleChangePlanName = (event) => {
+        setPlanName(event.target.value)
+    }
+
+    const [planTitle, setPlanTitle] = useState("")
+    const handleChangePlanTitle = (event) => {
+        setPlanTitle(event.target.value)
+    }
+
     const CreateNewPlan = () => {
-        const newPlanName = `newPlan ${planList.length + 1}`
+        const newPlanName = planName.trim()
+        const newPlanTitle = planTitle.trim()
+
+        if (!newPlanName || !newPlanTitle) {
+            alert("Please provide both a plan name and a title.")
+            return
+        }
+
         const updatedPlanList = [...planList, newPlanName]
         setPlanList(updatedPlanList)
         localStorage.setItem("planList", JSON.stringify(updatedPlanList))
@@ -73,7 +91,7 @@ function App() {
             {
                 id: `${planList.length + 1}`,
                 name: newPlanName,
-                Title: `${newPlanName} Plan`,
+                Title: newPlanTitle,
                 exercisePlan: [
                     {
                         id: 1,
@@ -88,6 +106,12 @@ function App() {
         ]
 
         localStorage.setItem(newPlanName, JSON.stringify(newPlan))
+
+        localStorage.setItem("PlanData", JSON.stringify(newPlan))
+        setPlan(newPlan)
+
+        setPlanName("")
+        setPlanTitle("")
     }
 
     const handleDeletePlan = (planToRemove) => {
@@ -101,19 +125,54 @@ function App() {
         setPlan(null)
     }
 
+    const [isPopupVisible, setPopupVisible] = useState(false)
+
+    const handleOpenPopup = () => {
+        setPopupVisible(true)
+    }
+
+    const handleClosePopup = () => {
+        setPopupVisible(false)
+    }
+
     return (
         <StyledApp>
             <header></header>
             <main>
                 <menu>
-                    <h3>Mine Planer</h3>
+                    <h3>Mine Skemaer</h3>
+
                     <ul>
                         {planList.map((item) => (
                             <li key={item} onClick={() => HandleCurrentPlan(item)}>
                                 {item}
                             </li>
                         ))}
-                        <li onClick={CreateNewPlan}>add</li>
+                        <li onClick={handleOpenPopup}>Tilføj</li>
+                        {isPopupVisible && (
+                            <Popup
+                                content={
+                                    <StyledAddForm>
+                                        {/* <label>Felt Navn</label> */}
+                                        <input
+                                            type="text"
+                                            onChange={handleChangePlanName}
+                                            value={planName}
+                                            placeholder="Name"
+                                        />
+                                        {/* <label>Felt Title</label> */}
+                                        <input
+                                            type="text"
+                                            onChange={handleChangePlanTitle}
+                                            value={planTitle}
+                                            placeholder="Title"
+                                        />
+                                        <button onClick={CreateNewPlan}>Tilføj</button>
+                                    </StyledAddForm>
+                                }
+                                onClose={handleClosePopup}
+                            />
+                        )}
                     </ul>
                 </menu>
                 <Home plan={plan} onDeletePlan={handleDeletePlan} />
@@ -153,6 +212,11 @@ const StyledApp = styled.main`
             }
         }
         menu {
+            color: white;
+            padding: 1rem;
+            h3 {
+                margin-bottom: 1rem;
+            }
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -170,6 +234,27 @@ const StyledApp = styled.main`
                     border-radius: 1rem;
                 }
             }
+        }
+    }
+`
+
+const StyledAddForm = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    label {
+        color: black;
+        font-weight: 500;
+    }
+
+    input,
+    button {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid black;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
         }
     }
 `
