@@ -22,11 +22,14 @@ const FullscreenFrame = styled.div`
 `
 
 const StyledPopup = styled.div`
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
     min-width: 100px;
     min-height: 100px;
 `
