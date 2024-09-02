@@ -8,6 +8,7 @@ import styled from "styled-components"
 import Popup from "./Components/Popup"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
+import UrlParamHandler from "./hooks/UrlParamHandler"
 
 function App() {
     // demo data
@@ -139,6 +140,10 @@ function App() {
     const handleClosePopup = () => {
         setPopupVisible(false)
     }
+
+    useEffect(() => {
+        UrlParamHandler()
+    }, [])
 
     return (
         <StyledApp>
