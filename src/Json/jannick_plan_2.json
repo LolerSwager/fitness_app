@@ -1,0 +1,81 @@
+[
+    {
+        "id": 2,
+        "name": "Jannick 4x8",
+        "Title": "Jannick's trænings skema 4x8",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": 16,
+                "exerciseName": "Hacksquat",
+                "repetitions": "4x8",
+                "weight": "50",
+                "remarks": null
+            },
+            {
+                "id": 2,
+                "machineNr": 2,
+                "exerciseName": "Seated Leg Curl",
+                "repetitions": "4x8",
+                "weight": "35",
+                "remarks": null
+            },
+            {
+                "id": 3,
+                "machineNr": 7,
+                "exerciseName": "Chest press",
+                "repetitions": "4x8",
+                "weight": "27.5",
+                "remarks": null
+            },
+            {
+                "id": 4,
+                "machineNr": 5,
+                "exerciseName": "Abdominal / Back extensions",
+                "repetitions": "4x8",
+                "weight": "56.25",
+                "remarks": null
+            },
+            {
+                "id": 5,
+                "machineNr": 21,
+                "exerciseName": "Low row",
+                "repetitions": "4x8",
+                "weight": "42.5",
+                "remarks": null
+            },
+            {
+                "id": 6,
+                "machineNr": 22,
+                "exerciseName": "Lat pull down",
+                "repetitions": "4x8",
+                "weight": "42.5",
+                "remarks": null
+            },
+            {
+                "id": 7,
+                "machineNr": null,
+                "exerciseName": "Lateral schoulder press",
+                "repetitions": "4x8",
+                "weight": "2.5",
+                "remarks": null
+            },
+            {
+                "id": 8,
+                "machineNr": null,
+                "exerciseName": "Bicep Curl",
+                "repetitions": "4x8",
+                "weight": "7",
+                "remarks": null
+            },
+            {
+                "id": 9,
+                "machineNr": 19,
+                "exerciseName": "Tricep i vabellcross m. reb",
+                "repetitions": "4x8",
+                "weight": "12.5",
+                "remarks": null
+            }
+        ]
+    }
+]

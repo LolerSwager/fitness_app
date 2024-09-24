@@ -3,6 +3,7 @@ import Home from "./Pages"
 import JannickData from "./Json/Jannick_plan.json"
 import AnitaData from "./Json/Anita_plan.json"
 import OpvarmingData from "./Json/Opvarming_plan.json"
+import JannickData2 from "./Json/jannick_plan_2.json"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 import Popup from "./Components/Popup"
@@ -19,11 +20,14 @@ function App() {
         if (!localStorage.getItem("Jannick")) {
             localStorage.setItem("Jannick", JSON.stringify(JannickData))
         }
+        if (!localStorage.getItem("Jannick 2")) {
+            localStorage.setItem("Jannick 2", JSON.stringify(JannickData2))
+        }
         if (!localStorage.getItem("Anita")) {
             localStorage.setItem("Anita", JSON.stringify(AnitaData))
         }
         if (!localStorage.getItem("planList")) {
-            localStorage.setItem("planList", JSON.stringify(["Øvelser", "Jannick", "Anita"]))
+            localStorage.setItem("planList", JSON.stringify(["Øvelser", "Jannick", "Jannick 2", "Anita"]))
         }
     }, [])
 
