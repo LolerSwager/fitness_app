@@ -1,0 +1,41 @@
+[
+    {
+        "id": 9,
+        "name": "Yoga",
+        "Title": "Yoga Øvelse. Stræk mod hovedpine osv.",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": null,
+                "exerciseName": "Øvelse 1",
+                "repetitions": "5-8*vej",
+                "weight": null,
+                "remarks": "Stå eller sid med armene ned langs siden Kør skuldere rundt i storer cirkler kør begge veje 5-8 gange"
+            },
+            {
+                "id": 2,
+                "machineNr": null,
+                "exerciseName": "Øvelse 2",
+                "repetitions": "5*vej",
+                "weight": null,
+                "remarks": "Sænk hage mod dit brystben. og begynd langsomt at bevæge hagen ud mod din højre skulder. Lad hovedet tippe lidt bagover, og fortsæt bevægelsen, sådan at næsen pager op mod loftet. Når du når til venstre skulder, lader du hagen fortsætte, til den igen er ud for brystbenet. Gentag bægge veje 5 gang"
+            },
+            {
+                "id": 3,
+                "machineNr": null,
+                "exerciseName": "Øvelse 3",
+                "repetitions": null,
+                "weight": null,
+                "remarks": "Fold hænderne, og tag let fat omkring den nederste del af dit baghoved. Lad albuerne pege fremad. Sænk nu albuerne i retningen af dine lår, så du bøjer nakken. Rund lidt i ryggen, hvis det føles ok. træk vejret her 2-3 gange, og mærkefter, at du ikke spænder ud til siden. Løft dit brystben i retning af loftet, og træk albuerne tilbage. Træk vejret 2-3 gange her."
+            },
+            {
+                "id": 4,
+                "machineNr": null,
+                "exerciseName": "Øvelse 4",
+                "repetitions": "5-8*vej",
+                "weight": null,
+                "remarks": "Kom nu frem og stå på alle fire. Hænder under skuldre - knæ under hofter . Lad virsten være strækt, hvis muligt. løft nu din højre hånd mod loftet ved at rygsøjlen. Bliv ikke overrasket, hvis dsu ikke kan dreje dig så langt. Det kommer med øvelse. Sænk højre arm, og stik den ind under venstre sådan, at du lægger højre øre mod gulvet. Løft igen højre arm mod loftet og fortsæt sådan. Hvis muligt, kan du trække vejret ind, idet du løftere hånden mod loftet og ånde ud, når du lægger øret mod gulvet. Gentag 5-8 Gange med højre og det samme med venstre arm."
+            }
+        ]
+    }
+]

@@ -1,9 +1,14 @@
 import "./App.css"
 import Home from "./Pages"
-import JannickData from "./Json/Jannick_plan.json"
-import AnitaData from "./Json/Anita_plan.json"
 import OpvarmingData from "./Json/Opvarming_plan.json"
+import JannickData from "./Json/Jannick_plan.json"
 import JannickData2 from "./Json/jannick_plan_2.json"
+import JannickData3 from "./Json/jannick_plan_3.json"
+import JannickData4 from "./Json/jannick_plan_4.json"
+import JannickData5 from "./Json/jannick_plan_5.json"
+import AnitaData from "./Json/Anita_plan.json"
+import AnitaData2 from "./Json/Anita_plan_2.json"
+import Yoga from "./Json/Anita_Yoga.json"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 import Popup from "./Components/Popup"
@@ -23,11 +28,39 @@ function App() {
         if (!localStorage.getItem("Jannick 2")) {
             localStorage.setItem("Jannick 2", JSON.stringify(JannickData2))
         }
+        if (!localStorage.getItem("Ben")) {
+            localStorage.setItem("Ben", JSON.stringify(JannickData3))
+        }
+        if (!localStorage.getItem("Overkrop")) {
+            localStorage.setItem("Overkrop", JSON.stringify(JannickData4))
+        }
+        if (!localStorage.getItem("Full body")) {
+            localStorage.setItem("Full body", JSON.stringify(JannickData5))
+        }
         if (!localStorage.getItem("Anita")) {
             localStorage.setItem("Anita", JSON.stringify(AnitaData))
         }
+        if (!localStorage.getItem("Anita 2")) {
+            localStorage.setItem("Anita 2", JSON.stringify(AnitaData2))
+        }
+        if (!localStorage.getItem("Yoga")) {
+            localStorage.setItem("Yoga", JSON.stringify(Yoga))
+        }
         if (!localStorage.getItem("planList")) {
-            localStorage.setItem("planList", JSON.stringify(["Øvelser", "Jannick", "Jannick 2", "Anita"]))
+            localStorage.setItem(
+                "planList",
+                JSON.stringify([
+                    "Øvelser",
+                    "Jannick",
+                    "Jannick 2",
+                    "Ben",
+                    "Overkrop",
+                    "Full body",
+                    "Anita",
+                    "Anita 2",
+                    "Yoga",
+                ])
+            )
         }
     }, [])
 

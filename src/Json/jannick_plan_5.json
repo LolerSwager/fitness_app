@@ -1,0 +1,57 @@
+[
+    {
+        "id": 8,
+        "name": "Full body",
+        "Title": "Full body træning uge 40+41",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": null,
+                "exerciseName": "Bænkpress",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 2,
+                "machineNr": 15,
+                "exerciseName": "Hacksquat",
+                "repetitions": "4*8",
+                "weight": "5",
+                "remarks": null
+            },
+            {
+                "id": 3,
+                "machineNr": 2,
+                "exerciseName": "Seated Leg Curl",
+                "repetitions": "3*10",
+                "weight": "35",
+                "remarks": null
+            },
+            {
+                "id": 4,
+                "machineNr": null,
+                "exerciseName": "Row bredt greb",
+                "repetitions": "3*10",
+                "weight": "37",
+                "remarks": null
+            },
+            {
+                "id": 5,
+                "machineNr": null,
+                "exerciseName": "Mavebænk",
+                "repetitions": "3*12",
+                "weight": null,
+                "remarks": "så mange du kan"
+            },
+            {
+                "id": 6,
+                "machineNr": null,
+                "exerciseName": "hammer curl",
+                "repetitions": "3*10",
+                "weight": "6",
+                "remarks": null
+            }
+        ]
+    }
+]

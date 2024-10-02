@@ -1,0 +1,97 @@
+[
+    {
+        "id": 5,
+        "name": "Anita 2",
+        "Title": "Træning og opvarming uge 40+41",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": 1,
+                "exerciseName": "Seated leg press",
+                "repetitions": "4*8",
+                "weight": 20,
+                "remarks": "lidt mere vægt på end du har haft når du kører 3x12"
+            },
+            {
+                "id": 2,
+                "machineNr": 2,
+                "exerciseName": "Seated leg curl",
+                "repetitions": "3*5",
+                "weight": 15,
+                "remarks": "Hold igen når du kører nedad. Hold 2 sek når føder er helt oppe ved numsen"
+            },
+            {
+                "id": 3,
+                "machineNr": 3,
+                "exerciseName": "Leg extentions",
+                "repetitions": "4*8",
+                "weight": 17.5,
+                "remarks": "Hold igen når du kører ned ad"
+            },
+            {
+                "id": 4,
+                "machineNr": 6,
+                "exerciseName": "Row",
+                "repetitions": "4*8",
+                "weight": 20,
+                "remarks": "1 arm ad gangen. Hold igennår du kører ud igen "
+            },
+            {
+                "id": 5,
+                "machineNr": 10,
+                "exerciseName": "Back extensions",
+                "repetitions": "4*10",
+                "weight": 10,
+                "remarks": "ikke længere op end kroppen er lige"
+            },
+            {
+                "id": 6,
+                "machineNr": 8,
+                "exerciseName": null,
+                "repetitions": "4*6",
+                "weight": 1,
+                "remarks": null
+            },
+            {
+                "id": 7,
+                "machineNr": null,
+                "exerciseName": "Mavebænk",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 8,
+                "machineNr": null,
+                "exerciseName": "Lateral raises",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 9,
+                "machineNr": null,
+                "exerciseName": "opvarmining",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": "Squat på bænk/kasse evt m. lidt vægt"
+            },
+            {
+                "id": 10,
+                "machineNr": null,
+                "exerciseName": "opvarmining",
+                "repetitions": "3*15",
+                "weight": null,
+                "remarks": "rul for maven. Målet er at lave dem uden fødder i gulv"
+            },
+            {
+                "id": 11,
+                "machineNr": null,
+                "exerciseName": "opvarmining",
+                "repetitions": "3*8",
+                "weight": null,
+                "remarks": "push up med knæ i gulv"
+            }
+        ]
+    }
+]

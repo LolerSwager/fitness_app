@@ -1,0 +1,65 @@
+[
+    {
+        "id": 7,
+        "name": "Overkrop",
+        "Title": "Overkrop træning uge 40+41",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": null,
+                "exerciseName": "Bænkpress",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 2,
+                "machineNr": 17,
+                "exerciseName": "Chestpress plateloaded",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 3,
+                "machineNr": null,
+                "exerciseName": "pull down",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 4,
+                "machineNr": null,
+                "exerciseName": "Row Stang/håndvægte",
+                "repetitions": "3*10",
+                "weight": "10",
+                "remarks": null
+            },
+            {
+                "id": 5,
+                "machineNr": null,
+                "exerciseName": "Skulderpress håndvægt",
+                "repetitions": "3*10",
+                "weight": "6",
+                "remarks": null
+            },
+            {
+                "id": 6,
+                "machineNr": null,
+                "exerciseName": "Triceps cabellcros",
+                "repetitions": "3*15",
+                "weight": null,
+                "remarks": "Reb over hoved"
+            },
+            {
+                "id": 7,
+                "machineNr": null,
+                "exerciseName": "bicep curl håndvægt",
+                "repetitions": "3*10",
+                "weight": null,
+                "remarks": null
+            }
+        ]
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "id": 6,
+        "name": "Ben",
+        "Title": "Ben træning uge 40+41",
+        "exercisePlan": [
+            {
+                "id": 1,
+                "machineNr": 15,
+                "exerciseName": "Hacksquat",
+                "repetitions": "4x10",
+                "weight": "50",
+                "remarks": null
+            },
+            {
+                "id": 2,
+                "machineNr": 16,
+                "exerciseName": "Plateloaded benpress",
+                "repetitions": "4x10",
+                "weight": "5",
+                "remarks": null
+            },
+            {
+                "id": 3,
+                "machineNr": null,
+                "exerciseName": "Rumænsk dødløft i smithstativ",
+                "repetitions": "3*12",
+                "weight": null,
+                "remarks": null
+            },
+            {
+                "id": 4,
+                "machineNr": 3,
+                "exerciseName": "Leg extentions",
+                "repetitions": "4x8",
+                "weight": null,
+                "remarks": "1 ben ad gangen"
+            }
+        ]
+    }
+]
